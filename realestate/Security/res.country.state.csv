@@ -1,5 +1,5 @@
-id;country_id;name;code
-state_au_1;base.au;Australian Capital Territory;ACT
-state_au_2;base.au;New South Wales;NSW
-state_au_3;base.au;Northern Territory;NT
-state_au_4;base.au;Queensland;QLD
+id,country_id,name,code
+state_au_1,base.au,Australian Capital Territory,ACT
+state_au_2,base.au,New South Wales,NSW
+state_au_3,base.au,Northern Territory,NT
+state_au_4,base.au,Queensland,QLD
