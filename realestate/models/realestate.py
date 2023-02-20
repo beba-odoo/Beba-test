@@ -3,11 +3,11 @@ from odoo import models, fields
 class realestate(models.Model):
     _name = "real.estate"
     _description = "Real Estate"
-    name = fields.Char()
+    name = fields.Char(required:True)
     description = fields.Text()
     postcode = fields.Char()
     date_availability = fields.Date()
-    expected_price = fields.Float()
+    expected_price = fields.Float(require=True)
     selling_price = fields.Float()
     bedrooms = fields.Integer()
     living_area = fields.Integer()
