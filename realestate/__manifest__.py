@@ -11,5 +11,6 @@
     'data': [
         'views/realestate_view.xml',
         'Security/country state.csv',
+        'Security/Security access rights real estate.csv'
     ],
 }
