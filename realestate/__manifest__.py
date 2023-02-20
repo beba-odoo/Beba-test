@@ -10,5 +10,6 @@
     # data files always loaded at installation
     'data': [
         'views/realestate_view.xml',
+        'Security/country state.csv',
     ],
 }
