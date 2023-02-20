@@ -1,0 +1,2 @@
+name;model_id;perm_create;perm_read;perm_write;perm_unlink
+access to real estate;realestate.model_real_estate;1;1;1;1
