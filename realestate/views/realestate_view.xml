@@ -6,6 +6,11 @@
 		<field name="res_model">real.estate</field>
 		<field name="view_mode">tree,form</field>
 	</record>
-	<menuitem id="realestate_menu_action" action="realestate_model_action"/>
+	<menuitem id="Realestate_menu_root" name="Real_Estate">
+		<menuitem id="Realestate_first_level_menu" name="Real_Estate">
+			<menuitem id="realestate_menu_action" action="realestate_model_action"/>
+		</menuitem>
+	</menuitem>
+	
 	</data>
 </odoo>
