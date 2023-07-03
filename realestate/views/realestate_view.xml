@@ -11,6 +11,77 @@
 			<menuitem id="realestate_menu_action" action="realestate_model_action"/>
 		</menuitem>
 	</menuitem>
-	
+	<record id="view_real_estate_tree" model="ir.ui.view">
+		<field name="name">real.estate.tree</field>
+		<field name="model">real.estate</field>
+		<field name="arch" type="xml">
+			<tree xxxxxxxxxxxxxx>
+				<field name="name"/>
+				<field name="postcode"/>
+				<field name="bedrooms"/>
+				<field name="living_area"/>
+				<field name="expected_price"/>
+				<field name="selling_price"/>
+				<field name="date_availability"/>
+			</tree>
+		</field>
+	</record>
+
+
+	<record	id="view_real_estate_form" model="ir.ui.view">
+		<field name="name">real.estate.form</field>
+		<field name="model">real.estate</field>
+		<field name="arch" type="xml">
+			<form string="Property">
+				<sheet>
+					<group>
+						<group>
+							<field name="postcode"/>
+							<field name="date_availability"/>
+						</group>
+						<group>
+							<field name="expected_price"/>
+							<field name="selling_price"/>
+						</group>
+						<notebook>
+							<page string="More details">
+								<group>
+									<group>
+										<field name="description"/>
+										<field name="bedrooms"/>
+										<field name="living_area"/>
+										<field name="facades"/>
+									</group>
+									<group>
+										<field name="garage"/>
+										<field name="garden"/>
+										<field name="garden_area"/>
+										<field name="garden_orientation"/>
+									</group>
+								</group>
+							</page>
+						</notebook>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record	id="view_real_estate_search" model="ir.ui.view">
+		<field name="name">real.estate.search</field>
+		<field name="model">real.estate</field>
+		<field name="arch" type="xml">
+			<search string="Search Properties">
+				<field name="name"/>
+				<field name="postcode"/>
+				<field name="expected_price"/>
+				<field name="bedrooms"/>
+				<field name="living_area"/>
+				<field name="facades"/>
+				<filter string="available" name="available" domain="['|'('state', '=', 'New'), (state', '=', 'Offer Received')]"/>
+				<filter string="Postcode" name="groupby_postcode" context="{'group_by' : 'postcode'}"/>
+			</search>
+		</field>
+	</record>
 	</data>
 </odoo>
