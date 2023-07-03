@@ -28,4 +28,4 @@ class realestate(models.Model):
 class propertytypes(models.Model):
     _name = "real.estate.property"
     _description = "Type of property"
-    name = fields.char(required=True,index=True)
+    name = fields.Char(required=True,index=True)
