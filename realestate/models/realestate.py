@@ -25,7 +25,7 @@ class realestate(models.Model):
     user_id = fields.Many2one("res.user", string="Salesman")
     property_id= fields.Many2one("real.estate.property", string="Property Type")
  
-class propertytypes(models.model):
+class propertytypes(models.Model):
     _name = "real.estate.property"
     _description = "Type of property"
     name = fields.char(required=True,index=True)
