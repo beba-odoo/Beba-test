@@ -21,4 +21,11 @@ class realestate(models.Model):
         string='Orientation',
         selection=[('North', 'North'), ('South', 'South'),('East', 'East'), ('West', 'West')])
     state = fields.Selection(selection=[('new', 'New'), ('offer_received', 'Offer Received'), ('offer_accepted', 'Offer Accepted'), ('sold', 'Sold'), ('canceled', 'Canceled')], string='State', default='new', required=True, copy=False)
+    partner_id = fields.Many2one("res.partner", string="Buyer")
+    user_id = fields.Many2one("res.user", string="Salesman")
+    property_id= fields.Many2one("real.estate.property", string="Property Type")
  
+class property types(models.model):
+    _name = "real.estate.property"
+    _description = "Type of property"
+    name = fields.char(required=True,index=True)
