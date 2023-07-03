@@ -92,7 +92,7 @@
 	</record>
 	<menuitem id="Realestate_menu_root" name="Real_Estate">
 		<menuitem id="Realestate_first_level_menu" name="Settings">
-			<menuitem id="realestate_menu_action" action="realestate_model_action"/>
+			<menuitem id="realestate_menu_action" action="realestateproperty_model_action"/>
 		</menuitem>
 	</menuitem>
 	</data>
