@@ -36,6 +36,7 @@
 				<sheet>
 					<group>
 						<group>
+							<field name="name"/>
 							<field name="postcode"/>
 							<field name="date_availability"/>
 						</group>
