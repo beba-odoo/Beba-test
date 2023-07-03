@@ -6,9 +6,17 @@
 		<field name="res_model">real.estate</field>
 		<field name="view_mode">tree,form</field>
 	</record>
-	<menuitem id="Realestate_menu_root" name="Real_Estate">
+	<record id="realestateproperty_model_action" model="ir.actions.act_window">
+		<field name="name">Property Types</field>
+		<field name="res_model">real.estate.property</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	<menuitem id="Realestate_menu_root1" name="Real_Estate">
 		<menuitem id="Realestate_first_level_menu" name="Real_Estate">
 			<menuitem id="realestate_menu_action" action="realestate_model_action"/>
+		</menuitem>
+		<menuitem id="Realestate_first_level_menu" name="Settings">
+			<menuitem id="realestate_menu_action" action="realestateproperty_model_action"/>
 		</menuitem>
 	</menuitem>
 	<record id="view_real_estate_tree" model="ir.ui.view">
@@ -26,7 +34,6 @@
 			</tree>
 		</field>
 	</record>
-
 
 	<record	id="view_real_estate_form" model="ir.ui.view">
 		<field name="name">real.estate.form</field>
@@ -85,15 +92,6 @@
 			</search>
 		</field>
 	</record>
-	<record id="realestateproperty_model_action" model="ir.actions.act_window">
-		<field name="name">Property Types</field>
-		<field name="res_model">real.estate.property</field>
-		<field name="view_mode">tree,form</field>
-	</record>
-	<menuitem id="Realestate_menu_root" name="Real_Estate">
-		<menuitem id="Realestate_first_level_menu" name="Settings">
-			<menuitem id="realestate_menu_action" action="realestateproperty_model_action"/>
-		</menuitem>
 	</menuitem>
 	</data>
 </odoo>
