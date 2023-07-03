@@ -54,7 +54,24 @@
 					</group>
 				</sheet>
 			</form>
+		</field>
+	</record>
 
-
+	<record	id="view_real_estate_search" model="ir.ui.view">
+		<field name="name">real.estate.search</field>
+		<field name="model">estate.property</field>
+		<field name="arch" type="xml">
+			<search string="Search Properties">
+				<field name="name"/>
+				<field name="postcode"/>
+				<field name="expected_price"/>
+				<field name="bedrooms"/>
+				<field name="living_area"/>
+				<field name="facades"/>
+				<filter string="available" name="available" domain="['|'('state', '=', 'New'), (state', '=', 'Offer Received')]"/>
+				<filter string="Postcode" name="groupby_postcode" context="{'group_by' : 'postcode'}"/>
+			</search>
+		</field>
+	</record>
 	</data>
 </odoo>
