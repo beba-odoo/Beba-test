@@ -3,7 +3,7 @@
 	<data>
 	<record id="view_real_estate_tree" model="ir.ui.view">
 		<field name="name">real.estate.tree</field>
-		<field name="model">real.estate</field>
+		<field name="model">estate.property</field>
 		<field name="arch" type="xml">
 			<tree xxxxxxxxxxxxxx>
 				<field name="name"/>
