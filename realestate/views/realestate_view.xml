@@ -72,8 +72,10 @@
 								</group>
 							</page>
 							<page string="Other Info">
-								<field name="user_id"/>
-								<field name="partner_id"/>							
+								<group>
+									<field name="user_id"/>
+									<field name="partner_id"/>	
+								</group>					
 							</page>
 						</notebook>
 					</group>
