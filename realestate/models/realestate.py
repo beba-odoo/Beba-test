@@ -28,7 +28,7 @@ class realestate(models.Model):
         string='Orientation',
         selection=[('North', 'North'), ('South', 'South'),('East', 'East'), ('West', 'West')])
     state = fields.Selection(selection=[('new', 'New'), ('offer_received', 'Offer Received'), ('offer_accepted', 'Offer Accepted'), ('sold', 'Sold'), ('canceled', 'Canceled')], string='State', default='new', required=True, copy=False)
-    partner_id = fields.Many2one("res.partner", string="Buyer")
-    user_id = fields.Many2one("res.users", string="Salesman")
+    partner_id = fields.Many2one("res.partner", string="Buyer", copy=False)
+    user_id = fields.Many2one("res.users", string="Salesman", default=lambda self: self.env.user)
     property_id= fields.Many2one("real.estate.property", string="Property Type")
  
