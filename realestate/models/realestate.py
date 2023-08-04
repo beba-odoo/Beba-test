@@ -1,6 +1,11 @@
 from dateutil.relativedelta import relativedelta
 from odoo import models, fields
 
+class propertytypes(models.Model):
+    _name = "real.estate.property"
+    _description = "Type of property"
+    name = fields.Char(required=True,index=True)
+
 class realestate(models.Model):
     _name = "real.estate"
     _description = "Real Estate"
@@ -25,7 +30,3 @@ class realestate(models.Model):
     user_id = fields.Many2one("res.user", string="Salesman")
     property_id= fields.Many2one("real.estate.property", string="Property Type")
  
-class propertytypes(models.Model):
-    _name = "real.estate.property"
-    _description = "Type of property"
-    name = fields.Char(required=True,index=True)
