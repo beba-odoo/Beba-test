@@ -73,7 +73,7 @@
 							</page>
 							<page string="Other Info">
 								<field name="user_id"/>
-								<field_name="partner_id"/>							
+								<field name="partner_id"/>							
 							</page>
 						</notebook>
 					</group>
