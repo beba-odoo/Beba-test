@@ -1,7 +1,7 @@
 {
     'name': "Real Estate",
     'version': '14',
-    'depends': ['base','crm'],
+    'depends': ['base','crm','contact'],
     'author': "BEBA",
     'category': 'Realestate',
     'description': """
