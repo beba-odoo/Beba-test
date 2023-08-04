@@ -4,11 +4,13 @@ from odoo import models, fields
 class propertytypes(models.Model):
     _name = "real.estate.property"
     _description = "Type of property"
+    
     name = fields.Char(required=True,index=True)
 
 class realestate(models.Model):
     _name = "real.estate"
     _description = "Real Estate"
+    
     name = fields.Char(required=True,index=True)
     description = fields.Text()
     postcode = fields.Char()
@@ -28,5 +30,5 @@ class realestate(models.Model):
     state = fields.Selection(selection=[('new', 'New'), ('offer_received', 'Offer Received'), ('offer_accepted', 'Offer Accepted'), ('sold', 'Sold'), ('canceled', 'Canceled')], string='State', default='new', required=True, copy=False)
     partner_id = fields.Many2one("res.partner", string="Buyer")
     user_id = fields.Many2one("res.users", string="Salesman")
-    property_id= fields.Many2one("real.estate.property", string="Property Type")
+    #property_id= fields.Many2one("real.estate.property", string="Property Type")
  

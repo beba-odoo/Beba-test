@@ -9,7 +9,7 @@
     """,
     # data files always loaded at installation
     'data': [
-        'views/realestate_view.xml',
+        #'views/realestate_view.xml',
         'Security/res.country.state.csv',
         'Security/ir.model.access.csv'
     ],
