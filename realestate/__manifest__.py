@@ -11,6 +11,6 @@
     'data': [
         'views/realestate_view.xml',
         'Security/res.country.state.csv',
-        #'Security/ir.model.access.csv'
+        'Security/ir.model.access.csv'
     ],
 }
