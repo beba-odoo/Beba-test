@@ -71,7 +71,7 @@
 									</group>
 								</group>
 							</page>
-							<page sting="Other Info">
+							<page string="Other Info">
 								<field name="user_id"/>
 								<field_name="partner_id"/>							
 							</page>
