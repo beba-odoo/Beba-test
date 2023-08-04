@@ -71,6 +71,10 @@
 									</group>
 								</group>
 							</page>
+							<page sting="Other Info">
+								<field name="user_id"/>
+								<field_name="partner_id"/>							
+							</page>
 						</notebook>
 					</group>
 				</sheet>
@@ -84,6 +88,7 @@
 		<field name="arch" type="xml">
 			<search string="Search Properties">
 				<field name="name"/>
+				<field name="property_id"/>
 				<field name="postcode"/>
 				<field name="expected_price"/>
 				<field name="bedrooms"/>
